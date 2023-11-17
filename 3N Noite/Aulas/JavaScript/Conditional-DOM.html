@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional-DOM</title>
+</head>
+<body>
+    <h1>Working with Conditionals</h1>
+    <p id="paragh"></p>
+
+    <script>'We are remembering conditionals'
+        var message = document.getElementById ('paragh');
+        var number = Math.floor(Math.random()*10) + 1;
+        window.alert(number)
+        if (number >5){
+            message.textContent = 'The random number is greater than 5.';
+            message.style.color = 'green'
+        } else if (number === 5){
+            message.textContent = 'The random number is equal than 5. ';
+            message.style.color = 'blue'
+        } else{
+            message.textContent = 'The random number is less than 5.';
+            message.style.color = 'red'
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While-DOM</title>
+</head>
+<body>
+    <h1>Example of Loop whit DOM</h1>
+
+    <ul id="list">
+    </ul>
+
+    <button onclick= "startLoop()">Start Loop</button>
+
+    <script>
+        let counter = 1;
+        let button = false;
+        function startLoop(){
+            button = true;
+            while(counter <= 10 && button){
+                let list = document.getElementById("list")
+                let newItem = document.createElement("li")
+                newItem.appendChild(document.createTextNode("List node element " + counter))
+                list.appendChild(newItem)
+                counter++;
+            }
+        }
+    </script>
+</body>
+</html>

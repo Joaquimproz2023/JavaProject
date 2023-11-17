@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laco-For with DOM</title>
+</head>
+<body>
+    <ul id = 'mylist'>
+        <li class = 'Food'>Fruit</li>
+        <li class = 'Food'>Bread</li>
+        <li class = 'Food'>Rice</li>
+        <li class = 'Food'>Beans</li>
+        <li class = 'Food'>Steak</li>
+    </ul>
+    <script>
+        let mylist = document.getElementById('mylist');
+        let itens = mylist.getElementsByTagName('li')
+
+        for (let i = 0; i < itens.length; i++) {
+            itens[i].textContent = "Element " + (i+1);
+        }
+    </script>
+</body>
+</html>

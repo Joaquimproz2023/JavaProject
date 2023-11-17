@@ -1,0 +1,10 @@
+#area {
+    background: rgb(0, 55, 253);
+    color: rgb(251, 251, 251);
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    line-height: 200px;
+    margin: auto;
+    text-align: center;
+}

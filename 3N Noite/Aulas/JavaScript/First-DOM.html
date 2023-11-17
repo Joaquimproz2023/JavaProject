@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-DOM</title>
+</head>
+<body>
+    <h1>Starting with DOM</h1>
+    <p>Hello, today I remember how to use DOM. </p>
+    <p>JavaScript is the second best language of the world!</p>
+
+    <div id="msg" name="divi" calss = 'classe'> Here we have a div</div>
+    <script>
+        //Picking for the Tag name (nome)
+        var p1 = window.document.getElementsByTagName ('p') [0]
+        p1.style.color = 'blue'
+        //document.write('The phrase captured in the first paragraph:' + p1.innerText)
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        p2.style.color = 'green'
+
+        //Manipulation by ID
+        var id = document.getElementById("msg")
+        id.style.color = 'white'
+        id.innerText = 'New text at DIV'
+
+        //Manipulation by Name (nome)
+        var nome = document.getElementsByName ('divi')[0]
+        nome.innerText = 'I changed the description of divi, again.'
+
+        //Manipulation by Selector
+        var s = document.querySelector('div#msg')
+        s.style.background = 'red'
+
+        //Manipulation by Class
+        var c = document.querySelector('div.classe')
+        s.style.background = 'red'
+    </script>
+</body>
+</html>
